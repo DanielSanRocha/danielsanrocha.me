@@ -29,7 +29,7 @@ export default {
 <style scoped>
 ul {
     padding: 0;
-    margin: 4%;
+    margin: 0% 4% 0% 4%;
     width: 92%;
     list-style-type: none;
 }

@@ -17,7 +17,7 @@ export default {
 }
 
 .navtop span {
-    margin: 2%;
+    margin: 1.5%;
     display: block;
     color: white;
     font-size: 3em;
