@@ -17,10 +17,10 @@ export default {
 }
 
 .navtop span {
-    margin: 1.5%;
+    margin: 4vh 0 0 0;
     display: block;
     color: white;
-    font-size: 3em;
+    font-size: 8vh;
     text-align: center;
 }
 </style>

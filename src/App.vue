@@ -3,7 +3,7 @@
     <navtop id="navtop"/>
     <div class="wrapper">
       <router-view id="router-view"/>
-      <index/>
+      <index id="index"/>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style @scoped>
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ body {
 #navtop {
   margin: 0;
   position: absolute;
-  height: 6em;
+  height: 15vh;
   width: 100%;
   top: 0em;
 }
@@ -40,6 +40,6 @@ body {
 .wrapper {
   position: absolute;
   width: 100%;
-  top: 6em;
+  top: 15vh;
 }
 </style>
