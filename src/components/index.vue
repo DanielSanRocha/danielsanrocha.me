@@ -1,7 +1,7 @@
 <template>
     <ul class="index">
         <li v-bind:key="link.id" v-for="link in links">
-            <div class="container">
+            <div class="container" v-on:click="OnLinkClicked(link)">
                 <img class="thumbnail" :src="link.thumbnail_src"/>
                 <span class="title">{{ link.title }}</span>
                 <span class="description">{{ link.description }}</span>
@@ -11,10 +11,12 @@
 </template>
 
 <script>
+import router from '../router'
+
 export default {
   data: function () {
     return {links: [
-      {id: 1, title: 'Título', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'},
+      {id: 1, ref: '/snakeai', title: 'SnakeAI', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'},
       {id: 2, title: 'Título', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'},
       {id: 3, title: 'Título', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'},
       {id: 4, title: 'Título', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'},
@@ -22,7 +24,14 @@ export default {
       {id: 6, title: 'Título', description: 'Descrição', thumbnail_src: './static/thumbnails/thumbnail.jpg'}
     ]}
   },
-  name: 'index'
+  name: 'index',
+  methods: {
+    OnLinkClicked: function (link) {
+      if (link['ref']) {
+        router.push(link['ref'])
+      }
+    }
+  }
 }
 </script>
 
