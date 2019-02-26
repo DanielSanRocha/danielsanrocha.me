@@ -32,14 +32,14 @@ body {
 #navtop {
   margin: 0;
   position: absolute;
-  height: 15%;
+  height: 6em;
   width: 100%;
-  top: 0px;
+  top: 0em;
 }
 
 .wrapper {
   position: absolute;
   width: 100%;
-  top: 15%;
+  top: 6em;
 }
 </style>
