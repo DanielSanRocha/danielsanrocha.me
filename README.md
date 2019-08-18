@@ -1,6 +1,6 @@
 # danielsanrocha.me
 
-> My personal Home Page =)
+> My personal Home Page =) (Hosted with love by github at danielsanrocha.github.io).
 
 ## Build Setup
 
@@ -17,8 +17,12 @@ node server.js
 
 ## Deploying to Production
 
-You can deploy this server to heroku simpling by pushing this rep to a heroku repository.
+You can deploy to a github pages setting a remote named 'static' to point to a username.github.io repository and running:
 
+``` bash
+npm run generate
+npm run deploy
+```
 
 ## Developing
 

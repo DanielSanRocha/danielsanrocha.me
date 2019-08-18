@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "push-dir --dir=dist --branch=master --remote=static --cleanup --force"
   },
   "dependencies": {
     "express": "^4.16.4",
