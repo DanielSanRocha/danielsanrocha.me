@@ -5,21 +5,19 @@
 </template>
 
 <script>
-
 export default {
-  name: 'description'
-}
+  name: "description"
+};
 </script>
 
 <style @scoped>
-
 .description {
-    margin: 2% 5% 0 5%;
+  margin: 2% 5% 0 5%;
 }
 
 .description h2.description {
-    color: gray;
-    text-align: center;
-    font-size: 2.3em;
+  color: gray;
+  text-align: center;
+  font-size: 2.3em;
 }
 </style>

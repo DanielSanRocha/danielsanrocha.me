@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <navtop id="navtop"/>
+    <navtop id="navtop" />
     <div class="wrapper">
-      <router-view id="router-view"/>
-      <index id="index"/>
+      <nuxt id="content" />
+      <index id="index" />
     </div>
   </div>
 </template>
 
 <script>
-import index from './components/index.vue'
-import navtop from './components/navtop.vue'
+import index from "~/components/index.vue";
+import navtop from "~/components/navtop.vue";
 
 export default {
-  components: {index, navtop},
-  name: 'App'
-}
+  components: { index, navtop }
+};
 </script>
 
 <style @scoped>

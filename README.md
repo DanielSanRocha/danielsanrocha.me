@@ -10,9 +10,9 @@ npm install
 
 # build
 npm run build
+npm start
 
 # serve on port 5000
-node server.js
 ```
 
 ## Deploying to Production
@@ -27,6 +27,6 @@ npm run deploy
 ## Developing
 
 ``` bash
-# serve with hot-reload
+# serve with hot-reload at localhost:3000
 npm run dev
 ```
