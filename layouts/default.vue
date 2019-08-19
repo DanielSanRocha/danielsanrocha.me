@@ -3,17 +3,15 @@
     <navtop id="navtop" />
     <div class="wrapper">
       <nuxt id="content" />
-      <index id="index" />
     </div>
   </div>
 </template>
 
 <script>
-import index from "~/components/index.vue";
 import navtop from "~/components/navtop.vue";
 
 export default {
-  components: { index, navtop }
+  components: { navtop }
 };
 </script>
 
@@ -37,8 +35,18 @@ body {
 }
 
 .wrapper {
-  position: absolute;
+  display: flex;
+  position: relative;
   width: 100%;
   top: 15vh;
+}
+
+.home-page {
+  margin-top: 5%;
+}
+
+.home-page img {
+  width: 5em;
+  height: 5em;
 }
 </style>

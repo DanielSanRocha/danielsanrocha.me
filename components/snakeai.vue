@@ -13,7 +13,11 @@
 
     <div class="description">
       <h1>SnakeAI</h1>
-      <span>A DeepLearning approach for constructing a AI to play snake =) (https://github.com/DanielSanRocha/SnakeAI)</span>
+      <span>A live version with a pre-trained neural network! If you want to now more about it, you can check the training code at</span>
+      <a
+        target="_blank"
+        href="https://github.com/DanielSanRocha/SnakeAI"
+      >https://github.com/DanielSanRocha/SnakeAI.</a>
     </div>
   </div>
 </template>
@@ -41,8 +45,10 @@ export default {
   },
   mounted: async function() {
     const host = window.location.host;
+    const protocol = window.location.protocol;
+
     this.model = await tf.loadLayersModel(
-      `https://${host}/snakeai_brain/model.json`
+      `${protocol}//${host}/snakeai_brain/model.json`
     );
 
     this.playInterval = setInterval(
@@ -222,23 +228,27 @@ export default {
 
 <style scoped>
 .snakeai-wrapper {
-  width: 100%;
-  padding: 2% 0 0 0;
+  max-width: 1000px;
+  padding: 0;
+  margin: 5% auto;
+  width: 90%;
+  text-align: center;
+  display: inline-flex;
 }
 
-.snakeai {
-  width: 30%;
+.snakeai-wrapper .snakeai {
+  width: 45%;
   position: relative;
-  top: 5%;
-  left: 17%;
+  top: 0;
+  left: 0%;
 }
 
 .snakeai-wrapper .description {
   margin: 0;
-  width: 30%;
-  position: absolute;
-  top: 5%;
-  right: 17%;
+  width: 45%;
+  display: block;
+  margin-left: 10%;
+  position: relative;
 }
 
 .snakeai-wrapper .description h1 {
@@ -269,20 +279,23 @@ export default {
   background-color: green;
 }
 
-@media (max-width: 650px) {
-  .snakeai {
-    width: 50%;
-    position: relative;
-    top: 25%;
-    left: 25%;
+@media (max-width: 900px) {
+  .snakeai-wrapper {
+    width: 100%;
+    padding: 0;
+    margin-top: 5%;
+    display: block;
+  }
+  .snakeai-wrapper .snakeai {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .snakeai-wrapper .description {
-    display: block;
-    position: relative;
-    width: 50%;
-    top: 25%;
-    left: 25%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 </style>

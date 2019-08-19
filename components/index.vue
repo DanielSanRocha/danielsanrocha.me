@@ -22,15 +22,16 @@ export default {
           id: 1,
           ref: "/snakeai",
           title: "SnakeAI",
-          description: "Descrição",
-          thumbnail_src: "/thumbnails/thumbnail.jpg"
+          description:
+            "A application of reinforcement learning for constructing a AI to play snake.",
+          thumbnail_src: "/thumbnails/snakeai.png"
         },
         {
           id: 2,
           ref: "/curriculum",
           title: "Curriculum Vitae",
           description: "My curriculum =)",
-          thumbnail_src: "/thumbnails/thumbnail.jpg"
+          thumbnail_src: "/thumbnails/curriculum.png"
         }
       ]
     };
@@ -39,22 +40,34 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 ul {
   padding: 0;
-  margin: 0% 4% 0% 4%;
-  width: 92%;
+  width: 100%;
+
+  height: 24em;
   list-style-type: none;
 }
 
 ul li {
-  width: 50%;
-  display: inline-block;
+  margin-left: 4%;
+  width: 44%;
+  height: 100%;
+  display: inline-flex;
+  border: 1px solid gray;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   ul li {
     display: block;
-    width: 100%;
+    width: 500px;
+    margin: 5% auto;
   }
 }
 
@@ -64,8 +77,8 @@ li .container {
 
 .container .thumbnail {
   width: 100%;
-  height: 5em;
-  overflow: hidden;
+  height: 16em;
+  object-fit: contain;
 }
 
 .container .title,
