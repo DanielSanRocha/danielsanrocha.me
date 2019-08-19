@@ -66,7 +66,7 @@ ul li {
 @media (max-width: 800px) {
   ul li {
     display: block;
-    width: 500px;
+    width: 90%;
     margin: 5% auto;
   }
 }

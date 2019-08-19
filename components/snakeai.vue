@@ -44,11 +44,8 @@ export default {
     };
   },
   mounted: async function() {
-    const host = window.location.host;
-    const protocol = window.location.protocol;
-
     this.model = await tf.loadLayersModel(
-      `${protocol}//${host}/snakeai_brain/model.json`
+      "https://danielsanrocha.github.io/snakeai_brain/model.json"
     );
 
     this.playInterval = setInterval(
@@ -228,10 +225,9 @@ export default {
 
 <style scoped>
 .snakeai-wrapper {
-  max-width: 1000px;
+  width: 800px;
   padding: 0;
   margin: 5% auto;
-  width: 90%;
   text-align: center;
   display: inline-flex;
 }
@@ -281,6 +277,7 @@ export default {
 
 @media (max-width: 900px) {
   .snakeai-wrapper {
+    max-width: 400px;
     width: 100%;
     padding: 0;
     margin-top: 5%;

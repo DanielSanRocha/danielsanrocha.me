@@ -16,4 +16,37 @@ export default {
 </script>
 
 <style @scoped>
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#navtop {
+  margin: 0;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: 0em;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: 15vh;
+}
+
+.home-page {
+  margin-top: 5%;
+}
+
+.home-page img {
+  width: 5em;
+  height: 5em;
+}
 </style>
