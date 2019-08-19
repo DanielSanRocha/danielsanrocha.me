@@ -12,6 +12,7 @@
     "deploy": "push-dir --dir=dist --branch=master --remote=static --cleanup --force"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^1.2.7",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0"
   },

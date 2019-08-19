@@ -1,5 +1,5 @@
 <template>
-  <snakeai />
+  <snakeai :gridSizeX="6" :gridSizeY="6" />
 </template>
 
 <script>
