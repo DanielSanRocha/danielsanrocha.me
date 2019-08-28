@@ -1,7 +1,7 @@
 <template>
   <div class="index-wrapper">
     <h2 class="description">Mathematician, programmer and aspiring bassist.</h2>
-    <index />
+    <index :links="links" />
   </div>
 </template>
 
@@ -9,9 +9,29 @@
 import index from "~/components/index.vue";
 
 export default {
-  name: "description",
-  layout: "index",
-  components: { index }
+  name: "index-page",
+  components: { index },
+  data: function() {
+    return {
+      links: [
+        {
+          id: 1,
+          ref: "/snakeai",
+          title: "SnakeAI",
+          description:
+            "A application of reinforcement learning for constructing a AI to play snake.",
+          thumbnail_src: "/thumbnails/snakeai.png"
+        },
+        {
+          id: 2,
+          ref: "/curriculum",
+          title: "Curriculum Vitae",
+          description: "My curriculum =)",
+          thumbnail_src: "/thumbnails/curriculum.png"
+        }
+      ]
+    };
+  }
 };
 </script>
 

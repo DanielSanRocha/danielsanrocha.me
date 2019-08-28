@@ -225,7 +225,7 @@ export default {
 
 <style scoped>
 .snakeai-wrapper {
-  width: 800px;
+  width: 100%;
   padding: 0;
   margin: 5% auto;
   text-align: center;
@@ -275,24 +275,21 @@ export default {
   background-color: green;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .snakeai-wrapper {
-    max-width: 400px;
     width: 100%;
     padding: 0;
     margin-top: 5%;
     display: block;
   }
   .snakeai-wrapper .snakeai {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 500px;
+    margin: auto;
   }
 
   .snakeai-wrapper .description {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 600px;
+    margin: auto;
   }
 }
 </style>
