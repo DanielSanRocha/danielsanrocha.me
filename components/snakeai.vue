@@ -44,9 +44,9 @@ export default {
     };
   },
   mounted: async function() {
-    this.model = await tf.loadLayersModel(
-      "https://danielsanrocha.github.io/snakeai_brain/model.json"
-    );
+    const modelLocation = `${window.location.protocol}//${window.location.host}/snakeai_brain/model.json`;
+    console.log(`Fetching model.json from ${modelLocation}`);
+    this.model = await tf.loadLayersModel(modelLocation);
 
     this.playInterval = setInterval(
       async function() {
