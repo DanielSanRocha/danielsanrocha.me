@@ -1,6 +1,6 @@
-# danielsanrocha.me
+# danielsanrocha.com
 
-> My personal Home Page =) (Hosted with love by github at danielsanrocha.github.io).
+> My personal Home Page =) Hosted with love by github at [danielsanrocha.com](http://danielsanrocha.com).
 
 ## Build Setup
 
