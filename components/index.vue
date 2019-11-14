@@ -25,6 +25,7 @@ export default {
 <style scoped>
 ul li {
   margin-left: 4%;
+  margin-top: 4%;
   width: 44%;
   max-width: 528px;
   min-width: 400px;

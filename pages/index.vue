@@ -28,6 +28,13 @@ export default {
           title: "Curriculum Vitae",
           description: "My curriculum =)",
           thumbnail_src: "/thumbnails/curriculum.png"
+        },
+        {
+          id: 3,
+          ref: "https://github.com/danielsanrocha/scaleye",
+          title: "Scaleye",
+          description: "A scala wrapper for JavaCV using futures for parallel processing.",
+          thumbnail_src: "/thumbnails/scaleye.png"
         }
       ]
     };
