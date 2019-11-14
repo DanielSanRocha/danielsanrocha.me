@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a :href="link" :target="openInNewTab ? 'blank' : ''">
+    <a :href="link" :target="openInNewTab ? '_blank' : ''">
       <div class="container">
         <img class="thumbnail" :src="thumbnail_src" />
         <span class="title">{{ title }}</span>
