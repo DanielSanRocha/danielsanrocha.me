@@ -15,7 +15,7 @@ export default {
       links: [
         {
           id: 1,
-          ref: "https://danielsanrocha.github.io/Curriculum/cv.pdf",
+          ref: "https://danielsanrocha.com/curriculum/cv.pdf",
           title: "Versão em Português",
           description: "",
           thumbnail_src: "/thumbnails/curriculum.png",
