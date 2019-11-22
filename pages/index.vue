@@ -33,8 +33,10 @@ export default {
           id: 3,
           ref: "https://github.com/danielsanrocha/scaleye",
           title: "Scaleye",
-          description: "A scala wrapper for JavaCV using futures for parallel processing.",
-          thumbnail_src: "/thumbnails/scaleye.png"
+          description:
+            "A scala wrapper for JavaCV using futures for parallel processing.",
+          thumbnail_src: "/thumbnails/scaleye.png",
+          openInNewTab: true
         }
       ]
     };

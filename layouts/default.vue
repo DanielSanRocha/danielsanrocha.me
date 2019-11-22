@@ -24,12 +24,13 @@ body {
   top: 0;
   height: 100%;
   width: 100%;
+  font-family: "Roboto";
 }
 
 #navtop {
   margin: 0;
   position: absolute;
-  height: 15vh;
+  height: 120px;
   width: 100%;
   top: 0em;
 }

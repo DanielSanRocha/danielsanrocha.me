@@ -11,14 +11,16 @@ module.exports = {
             { hid: 'description', name: 'description', content: pkg.description }
         ],
         link: [
+            {
+                rel: 'stylesheet',
+                href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            }
         ]
     },
     globalName: 'global',
 
     loading: { color: '#fff' },
-
-    css: [
-    ],
+    css: [],
     script: [
     ],
     plugins: [],

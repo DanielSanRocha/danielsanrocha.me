@@ -1,8 +1,12 @@
 <template>
   <div class="navtop">
-    <a href="/">
-      <span>Hello, I am Daniel!</span>
-    </a>
+    <a href="/" class="title">Hello, I am Daniel!</a>
+    <div class="links">
+      <a href="https://github.com/danielsanrocha/" target="_blank" class="link">
+        <img src="/github.png" />
+        <span>Github</span>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -15,14 +19,42 @@ export default {
 <style scoped>
 .navtop {
   background-color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  letter-spacing: 1px;
 }
 
-.navtop span {
-  margin: 4vh 0 0 0;
-  display: block;
+.navtop .title {
   color: white;
-  font-size: 8vh;
-  text-align: center;
+  font-size: 60px;
+  margin-right: 3vw;
+}
+
+.navtop .links {
+  height: 60px;
+  align-items: flex-end;
+  display: flex;
+}
+
+.navtop .link {
+  color: #555;
+  font-weight: 200;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.navtop .link img {
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.navtop .link:hover {
+  color: white;
 }
 
 .navtop a {

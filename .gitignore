@@ -91,3 +91,4 @@ sw.*
 *.ntvs*
 *.njsproj
 *.sln
+.DS_store
