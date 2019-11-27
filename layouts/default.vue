@@ -37,9 +37,9 @@ body {
 
 .wrapper {
   display: flex;
-  position: relative;
+  position: absolute;
   width: 100%;
-  top: 15vh;
+  top: 120px;
 }
 
 .home-page {

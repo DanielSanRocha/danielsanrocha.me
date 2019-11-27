@@ -28,7 +28,7 @@ ul li {
   margin-top: 4%;
   width: 44%;
   max-width: 528px;
-  min-width: 400px;
+  min-width: 200px;
   height: 100%;
   display: inline-flex;
   border: 1px solid gray;
@@ -47,7 +47,6 @@ ul {
     display: block;
     width: 90%;
     max-width: 528px;
-    min-width: 320px;
     margin: 5% auto;
   }
 }

@@ -79,10 +79,4 @@ export default {
     font-size: 11vw;
   }
 }
-
-@media (max-width: 350px) {
-  .navtop .title {
-    font-size: 39px;
-  }
-}
 </style>
