@@ -60,4 +60,29 @@ export default {
 .navtop a {
   text-decoration: none;
 }
+
+@media (max-width: 620px) {
+  .navtop {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navtop .links {
+    height: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navtop .title {
+    font-size: 11vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .navtop .title {
+    font-size: 39px;
+  }
+}
 </style>

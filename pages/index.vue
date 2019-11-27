@@ -57,4 +57,10 @@ h2.description {
   text-align: center;
   font-size: 2.3em;
 }
+
+@media (max-width: 620px) {
+  h2.description {
+    font-size: 1.5em;
+  }
+}
 </style>

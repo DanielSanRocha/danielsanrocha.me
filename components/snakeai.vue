@@ -292,4 +292,18 @@ export default {
     margin: auto;
   }
 }
+
+@media (max-width: 600px) {
+  .snakeai-wrapper .snakeai {
+    width: 90%;
+    max-width: 500px;
+    min-width: 250px;
+    margin: auto;
+  }
+
+  .snakeai-wrapper .description {
+    width: 90%;
+    margin: auto;
+  }
+}
 </style>

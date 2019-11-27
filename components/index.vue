@@ -47,7 +47,7 @@ ul {
     display: block;
     width: 90%;
     max-width: 528px;
-    min-width: 400px;
+    min-width: 320px;
     margin: 5% auto;
   }
 }
