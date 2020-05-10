@@ -12,9 +12,12 @@
     "deploy": "npm run clean && npm run build && npm run push"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@tensorflow/tfjs": "^1.2.7",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0"
+    "nuxt": "^2.4.0",
+    "showdown": "^1.9.1",
+    "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",

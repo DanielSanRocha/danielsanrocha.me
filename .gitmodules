@@ -1,0 +1,3 @@
+[submodule "components/RestAcademy"]
+	path = components/RestAcademy
+	url = git@github.com:DanielSanRocha/RestAcademy.git

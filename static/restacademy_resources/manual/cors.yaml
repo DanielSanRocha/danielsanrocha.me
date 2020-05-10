@@ -1,0 +1,28 @@
+id: cors
+name: The pesky CORS
+text: 'CORS is a acronym to Cross-origin resource sharing, in a very brief manner, for security reasons when a page request
+a resource in another domain (another base url) it is blocked by default. The the page that had their resources request
+inform the browser that the third party page can access their resources is through a header called CORS. <br><br>
+
+How your api probably will live in another domain (http://localhost:5000 for example) it will need to set a CORS
+header in the response so the browser can allow this webpage to access your API. If all this was very confusing
+what you need to know is that you will not have CORS problem if you set your API to set the header <br><br>
+```
+Access-Control-Allow-Origin: *
+```<br><br>
+in every response. Never do this in a production environment for obviously reasons. <br><br>
+
+
+A way to easily do this if you are using flask is to install flask-cors with the command <br><br>
+```
+pip install -U flask-cors
+```<br><br>
+
+And adding this snippet just after you declare the ''app'' global variable<br><br>
+```
+from flask_cors import CORS;
+CORS(app)
+```<br><br>
+
+Most of frameworks and languages have a easy way of setting up CORS so search around and see what you can find =).
+'

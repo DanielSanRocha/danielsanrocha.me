@@ -1,0 +1,8 @@
+id: simple_get
+name: First Steps
+text: 'Construct a API with that answers a single GET on the index with the text message "Hello World!" and nothing else.'
+tests:
+    - route: /
+      method: GET
+      output: "Hello World!"
+      status_code: 200

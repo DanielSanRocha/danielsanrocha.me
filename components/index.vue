@@ -38,7 +38,6 @@ ul {
   padding: 0;
   width: 100%;
 
-  height: 24em;
   list-style-type: none;
 }
 

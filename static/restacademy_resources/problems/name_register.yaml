@@ -1,0 +1,46 @@
+id: name_register
+name: Name Register
+text: 'Desenvolver uma API Rest com duas rotas
+
+
+POST /register -> api de registro de dados que aceita um json com uma chave nome e registra esse nome e devolve um id.<br>
+```
+    Input example: {"name": "monkey"},
+    Output example: {"id": "21"}
+```
+<br><br>
+
+GET /{ID} -> devolve o nome cadastrado em formato json com aquele id <br>
+```
+Route example: /42,
+Output example: {"name":  "monkey", "id": "42"}
+```
+<br><br>
+
+No caso de um ID inexistente a API deve retornar o status 404 com a mensagem json: <br>
+```
+{"mensagem": "id não encontrado"}
+```'
+tests:
+    - route: /register
+      method: POST
+      capture: ["id"]
+      output: {}
+      input:
+        name: monkey
+      headers:
+        Content-Type: application/json
+      status_code: 200
+
+    - route: /${this.id}
+      method: GET
+      output:
+        name: monkey
+        id: '${this.id}'
+      status_code: 200
+
+    - route: /jujuba
+      method: GET
+      output:
+        message: 'id não encontrado'
+      status_code: 404

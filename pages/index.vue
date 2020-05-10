@@ -37,6 +37,15 @@ export default {
             "A scala wrapper for JavaCV using futures for parallel processing.",
           thumbnail_src: "/thumbnails/scaleye.png",
           openInNewTab: true
+        },
+        {
+          id: 4,
+          ref: "/restacademy",
+          title: "RESTAcademy",
+          description:
+            "A interactive way to learn the basics about REST and HTTP.",
+          thumbnail_src: "/thumbnails/restacademy.png",
+          openInNewTab: false
         }
       ]
     };

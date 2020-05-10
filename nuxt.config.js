@@ -14,7 +14,12 @@ module.exports = {
             {
                 rel: 'stylesheet',
                 href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            },
+            {
+                rel: 'stylesheet',
+                href: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
             }
+
         ]
     },
     globalName: 'global',

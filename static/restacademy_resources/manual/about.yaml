@@ -1,0 +1,17 @@
+id: basics
+name: Basics
+text: 'Welcome to the RestAcademy a simple series of exercise to help you
+learn the basics of constructing rest apis! <br>
+To toggle ''on'' and ''off'' this manual just click on the green book icon on top right corner
+(I strongly recommend for you to read this manual until the end before attempting the exercises).
+You can review this manual anytime you want.  <br> <br>
+
+The objective of this page is to teach the basics about how the HTTP/REST protocol works through a series of exercises.
+Each exercise comes with a set automatic functional testing!!!
+These tests you can validate your work independent of the frameworks/languages/databases you used.  <br>
+
+To use the tests, just supply the address where your API is listening and the tests will run directly from your browser with live feedback!
+You can use the tests to validate your solution or help understand what you did not understand. <br> <br>
+
+Before jumping into programming, it is important that you set up your API to answer the correct CORS header so there isn''t a security issue between your browser and your api,
+you can read more about it on the next page...'
