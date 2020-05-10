@@ -1,6 +1,14 @@
 id: simple_get
 name: First Steps
-text: 'Construct a API with that answers a single GET on the index with the text message "Hello World!" and nothing else.'
+text: 'This first exercise is easy peasy to help check if your environment is properly set up
+and the CORS headers are Ok. Your objective is to construct a API that answers exactly the text message "Hello World!"
+when their index route (the /) is accessed. <br><br>
+
+After implementing the API in your framework/language of preference,
+just run it locally (or upload it to the cloud if you are brave enough), put the domain in input box below
+and press ''Test it!''. <br> By default the input box comes with the url http://localhost:5000 that should be the default
+route and port for several common frameworks on debug mode.
+After this, we are ready for more serious stuff.'
 tests:
     - route: /
       method: GET

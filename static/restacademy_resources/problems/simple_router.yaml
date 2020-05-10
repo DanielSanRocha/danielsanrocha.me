@@ -1,0 +1,21 @@
+id: simple_get
+name: The Concept of Routing
+text: 'Just so you can get the hang of these exercises, there is another easy one for you. Develop a API that answers two different
+json objects in two different routes! <br><br>
+
+More precisely, the API should answer ```{"message": "That is the first route!"}``` when you access the /routeA endpoint and <br>
+should answer ```{"message": "That is the second route!"}``` when you access the /routeB endpoint. Below you can find a way to validate
+your api. <br>
+All the others routes should send a 404 status code.'
+tests:
+    - route: /routeA
+      method: GET
+      output: "That is the first route!"
+      status_code: 200
+    - route: /routeB
+      method: GET
+      output: "That is the second route!"
+      status_code: 200
+    - route: /jujuba
+      method: GET
+      status_code: 404

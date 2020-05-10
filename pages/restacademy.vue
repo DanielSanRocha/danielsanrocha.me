@@ -3,7 +3,7 @@
     <no-ssr placeholder="Loading...">
       <div class="restacademy-wrapper">
         <rest-academy
-          :problemsUrl="['/restacademy_resources/problems/simple_get.yaml','/restacademy_resources/problems/name_register.yaml',]"
+          :problemsUrl="['/restacademy_resources/problems/simple_get.yaml','/restacademy_resources/problems/simple_router.yaml', '/restacademy_resources/problems/not_simple_router.yaml', '/restacademy_resources/problems/name_register.yaml',]"
           :manualPagesUrl="['/restacademy_resources/manual/about.yaml',' /restacademy_resources/manual/cors.yaml', '/restacademy_resources/manual/all_set.yaml']"
         />
       </div>
