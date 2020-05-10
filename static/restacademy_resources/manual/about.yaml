@@ -7,8 +7,8 @@ To toggle ''on'' and ''off'' this manual just click on the green book icon on to
 You can review this manual anytime you want.  <br> <br>
 
 The objective of this page is to teach the basics about how the HTTP/REST protocol works through a series of exercises.
-Each exercise comes with a set automatic functional testing!!!
-These tests you can validate your work independent of the frameworks/languages/databases you used.  <br>
+Each exercise comes with a set automatic functional tests!!!
+These tests you can use to validate your work in any frameworks, programming language or databases you used.  <br>
 
 To use the tests, just supply the address where your API is listening and the tests will run directly from your browser with live feedback!
 You can use the tests to validate your solution or help understand what you did not understand. <br> <br>

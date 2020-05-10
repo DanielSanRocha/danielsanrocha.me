@@ -1,9 +1,9 @@
 id: not_simple_router
 name: Playing with Routes
-text: 'Let''s start to make thing more interesting, can you construct a API that answers the square of a integer number? <br>
-More precisely, make a API that when someone access the /{number} it answers with the square of {number}. <br><br>
+text: 'Let''s start to make things more interesting, can you construct a API that answers the square of a integer number? <br>
+More precisely, make a API that when someone access the /{number} it answers with the square of the {number}. <br><br>
 
-For example, /6 should answers 36 and /8 should ansers 64.'
+For example, /6 should answers 36 and /8 should answers 64.'
 tests:
     - route: /3
       method: GET
